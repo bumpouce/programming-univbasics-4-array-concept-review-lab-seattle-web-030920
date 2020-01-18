@@ -8,6 +8,7 @@ def find_element_index(array, value_to_find)
 end
 
 def find_max_value(array)
+
 #  sorted_array = array.sort
 #  sorted_array.last
 
@@ -21,6 +22,15 @@ def find_max_value(array)
 end
 
 def find_min_value(array)
+
 #  sorted_array = array.sort
 #  sorted_array.first
+
+  min_value = array.first
+  array.length.times do |index|
+    if min_value > array[index]
+      min_value = array[index]
+    end
+  end
+  min_value
 end
