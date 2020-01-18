@@ -10,9 +10,10 @@ end
 def find_max_value(array)
 #  sorted_array = array.sort
 #  sorted_array.last
+
   max_value = array.first
   array.length.times do |index|
-  
+    if max_value < array[index]
   end
 end
 
